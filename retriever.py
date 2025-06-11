@@ -5,7 +5,8 @@ from sentence_transformers import SentenceTransformer
 INDEX_PATH = "data/index/index.faiss"
 CHUNKS_PATH = "data/index/chunks.json"
 
-MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+# MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+MODEL_NAME = "intfloat/multilingual-e5-base"
 
 TOP_K = 3
 

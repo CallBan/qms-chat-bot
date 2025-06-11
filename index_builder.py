@@ -9,7 +9,8 @@ INDEX_FOLDER = "data/index"
 INDEX_PATH = os.path.join(INDEX_FOLDER, "index.faiss")
 TEXTS_PATH = os.path.join(INDEX_FOLDER, "chunks.json")
 
-MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+# MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+MODEL_NAME = "intfloat/multilingual-e5-base"
 
 def build_index(chunks: list[str], model_name: str = MODEL_NAME):
     print("Загружаем модель...")

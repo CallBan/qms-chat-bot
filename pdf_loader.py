@@ -41,4 +41,4 @@ def load_chunks_from_pdf(folder_path: str) -> list[str]:
     :return: список чанков
     """
     full_text = extract_text_from_pdf(folder_path)
-    return split_text(full_text)
+    return split_text(full_text, max_length=500, overlap=150)
