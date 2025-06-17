@@ -2,7 +2,7 @@ import os
 import json
 import faiss
 from sentence_transformers import SentenceTransformer
-from pdf_loader import load_chunks_from_pdf
+from document_loader import load_chunks_from_documents
 
 DOCUMENTS_FOLDER = "data/documents"
 INDEX_FOLDER = "data/index"
@@ -36,6 +36,6 @@ def build_index(chunks: list[str], model_name: str = MODEL_NAME):
 
 if __name__ == "__main__":
     print("Загружаем документы...")
-    chunks = load_chunks_from_pdf(DOCUMENTS_FOLDER)
+    chunks = load_chunks_from_documents(DOCUMENTS_FOLDER)
     print(f"Найдено {len(chunks)} чанков текста")
     build_index(chunks)
